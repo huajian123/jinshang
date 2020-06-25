@@ -92,6 +92,12 @@ a {
 a:hover {
   color: white;
 }
+a.taobao-link {
+  color: #666;
+}
+a.taobao-link:hover {
+  color: #e21737;
+}
 h1,
 h2,
 h3,
