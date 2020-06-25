@@ -1628,6 +1628,7 @@ li {
 .contact {
   width: 100%;
   margin: 50px auto;
+  text-align: center;
 }
 .contact p {
   max-width: 780px;
