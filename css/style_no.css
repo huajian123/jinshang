@@ -324,7 +324,7 @@ li {
   right: 6%;
 }
 .banner .slick-dots {
-  display: none !important;
+  display: none!important;
 }
 .banner .wow {
   position: relative;
@@ -371,10 +371,10 @@ li {
 @media (max-width: 768px) {
   .banner .slick-prev,
   .banner .slick-next {
-    display: none !important;
+    display: none!important;
   }
   .banner .slick-dots {
-    display: block !important;
+    display: block!important;
   }
 }
 /*企业简介*/
@@ -631,7 +631,7 @@ li {
 }
 @media (max-width: 1200px) {
   .ppcp .container .tu_all ul li {
-    width: 33.333333333333336%;
+    width: 33.33333333%;
   }
 }
 @media (max-width: 991px) {
@@ -687,7 +687,7 @@ li {
   position: absolute;
   top: 0px;
   left: 0px;
-  padding-bottom: 59.310344827586206%;
+  padding-bottom: 59.31034483%;
   width: 100%;
   background-color: rgba(169, 146, 105, 0.8);
   display: none;
@@ -769,7 +769,7 @@ li {
 }
 .jmys .container .jmys_con {
   max-width: 640px;
-  width: 53.333333333333336%;
+  width: 53.33333333%;
   margin: auto;
   text-align: center;
   line-height: 30px;
@@ -877,7 +877,7 @@ li {
   position: relative;
 }
 .zxzx .container .zxzx_con .zx_left {
-  width: 49.44500504540868%;
+  width: 49.44500505%;
   float: left;
   background: #ffffff;
   padding: 50px 35px;
@@ -912,7 +912,7 @@ li {
 }
 @media (max-width: 420px) {
   .zxzx .container .zxzx_con .zx_left ul li a .span1 {
-    width: 70%;
+    width: 70% ;
   }
   .zxzx .container .zxzx_con .zx_left ul li a .span2 {
     width: 28%;
@@ -924,7 +924,7 @@ li {
 }
 .zxzx .container .zxzx_con .zx_right {
   float: right;
-  width: 49.44500504540868%;
+  width: 49.44500505%;
   position: absolute;
   box-shadow: -11px 11px 0px #957f58;
   right: 0px;
@@ -998,7 +998,7 @@ li {
 }
 .footer .container .footer_con {
   max-width: 1280px;
-  width: 94.2562592047128%;
+  width: 94.2562592%;
   margin: 39px auto;
 }
 .footer .container .footer_con .zhu .ul_1 {
@@ -1566,7 +1566,7 @@ li {
   outline: none;
 }
 .contact .lian_nei ul li {
-  width: 29.333333333333332%;
+  width: 29.33333333%;
   float: left;
   border-bottom: 1px solid #999999;
   margin: 0px 2%;
@@ -1592,6 +1592,11 @@ li {
   width: 28%;
   margin: 4% 2% 0px;
   position: relative;
+  /* img{
+                position: absolute;
+                right: -177px;
+                top: -10px;
+            }*/
 }
 @media (max-width: 480px) {
   .contact .lian_nei .yan {
@@ -1601,11 +1606,6 @@ li {
 .contact .lian_nei .yan input {
   width: 30%;
 }
-/* img{
-                position: absolute;
-                right: -177px;
-                top: -10px;
-            }*/
 .contact .lian_nei .yan img {
   position: absolute;
   right: -177px;
@@ -1626,13 +1626,14 @@ li {
 @media (max-width: 480px) {
   .contact .lian_nei .yan {
     width: 44%;
-  }
-  .contact .lian_nei .yan input {
-    width: 50%;
-  } /*img{
+    /*img{
                         top: -9px;
                         right: -178px;
                      }*/
+  }
+  .contact .lian_nei .yan input {
+    width: 50%;
+  }
 }
 .contact .lian_nei .submit {
   background: #a99269;
@@ -1672,7 +1673,7 @@ li {
 .ppjj_con_zi .con1 p {
   margin-bottom: 4%;
   font-size: 14px;
-  color: #55555;
+  color: #555555;
 }
 .ppjj_con_zi .con1 .about_img {
   position: absolute;
@@ -2065,7 +2066,7 @@ li {
 .new_show_main .prev_next li {
   float: left;
   width: 50%;
-  padding-left: 10px;
+  padding-left: 10px ;
   background: #a99269;
 }
 @media (max-width: 640px) {
@@ -2211,7 +2212,7 @@ li {
 .pro_show .prev_next li {
   float: left;
   width: 50%;
-  padding-left: 10px;
+  padding-left: 10px ;
   background: #a99269;
 }
 @media (max-width: 640px) {
@@ -2299,7 +2300,7 @@ li {
 }
 .show1 .show1_2 .s2_l h3 {
   font-size: 24px;
-  margin: 20px auto 15px;
+  margin: 20px auto  15px;
 }
 .show1 .show1_2 .s2_l p {
   font-size: 13px;
@@ -2338,7 +2339,7 @@ li {
   width: 48%;
   float: left;
   border: 1px solid #d3d3d2;
-  padding: 10px 0px 10px 15px;
+  padding: 10px 0px  10px 15px;
   margin-bottom: 20px;
   margin-right: 2%;
 }
@@ -2401,7 +2402,7 @@ li {
 }
 .show1 .form_3 .yan .yan_k {
   border: 1px solid #d3d3d2;
-  padding: 7px 0px 7px 15px;
+  padding: 7px 0px  7px 15px;
   width: 30%;
 }
 .show1 .form_3 .yan .yan_k span {
@@ -2652,7 +2653,7 @@ li {
 }
 @media (max-width: 480px) {
   .pro .container .pro_ul li .a_left {
-    padding: 8.6% 5.6% 41.0%;
+    padding: 8.6% 5.6% 41%;
   }
   .pro .container .pro_ul li .a_left h3 {
     font-size: 14px;

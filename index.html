@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css"/>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style2.css"/>
 	<link rel="stylesheet" href="css/animate.min.css">
 	
 	<!--[if lt IE 9]>
@@ -27,73 +27,25 @@
 <div>
 	<!--header-->
 	<header class="header">
-	    <section class="container">
-	    	<div class="en_left">
-	    		<a href="" class="en">EN</a><a href=""class="cn">CN</a><a href="" class="weixin">微信公众平台<img src="images/erwei.jpg" alt="" class="erwe"/></a><a href="tel:17716101908" class="phone_h">17798514457</a>
-	    		
-	    	</div>
-	    	
-	    	<div class="logo">
-	    		<img src="images/logo.png" alt=""  class="vcenter" />
-	    	</div>
-	    	<div class="nav_right">
-	    		<div class="search">
-	    			<input  type="text" placeholder="输入关键词搜索产品" class="text" />
-	    			<span class="glyphicon glyphicon-search icon-search fang" aria-hidden="true"> </span>
-	    		</div>
-	    		<div class="nav_tu"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
-	    		<div class="nav_show">
-	    			<span class="glyphicon glyphicon-remove cha"></span>
-	    			<div class="sou">
-	    				<div class="search">
-			    			<input  type="text" placeholder="输入关键词搜索产品" class="text" />
-			    			<span class="glyphicon glyphicon-search icon-search fang" aria-hidden="true"> </span>
-			    		</div>
-	    			</div>
-	    			<ul class="nav_ul">
-	    				<li><a href="index.html" class="active">首页</a></li>
-	    				<li><a href="about.html">公司简介</a>
-	    					<ul class="ul_2">
-	    						<li><a href="about.html">品牌简介</a></li>
-	    						<li><a href="about.html">企业文化</a></li>
-	    						<li><a href="about.html">我们的团队</a></li>
-	    						<li><a href="about.html">品牌历史</a></li>
-	    					</ul>
-	    				</li>
-	    				<li><a href="new.html">宠物百科</a>
-	    					<ul class="ul_2">
-		    					<li><a href="new.html">公司新闻</a></li>
-								<li><a href="new.html">行业新闻</a></li>
-	    					</ul>
-	    				</li>
-	    				<li><a href="pro.html">品牌产品</a>
-	    					<ul class="ul_2">
-	    						<li><a href="pro.html">产品分类</a></li>
-	    						<li><a href="pro.html">产品分类</a></li>
-	    						<li><a href="pro.html">产品分类</a></li>
-	    						<li><a href="pro.html">产品分类</a></li>
-	    						<li><a href="pro.html">产品分类</a></li>
-	    					</ul>
-	    				</li>
-	    				<li><a href="support.html">加盟专区</a>
-	    					<ul class="ul_2">
-	    						<li><a href="support.html">加盟优势</a></li>
-		    					<li><a href="support.html">加盟流程</a></li>
-		    					<li><a href="support.html">加盟支持</a></li>
-	    					</ul>
-	    				</li>
-	    				<li><a href="contact.html">联系我们</a>
-	    					<ul class="ul_2">
-	    						<li><a href="contact.html">联系方式</a></li>
-	    						<li><a href="contact.html">诚邀合作</a></li>
-	    						<li><a href="jop.html">加入我们</a></li>
-	    					</ul>
-	    				</li>
-	    			</ul>
-	    		</div>
-	    	</div>
-	    	
-	    </section>  		
+	    <section class="nav-wrapper ">
+			<div class="logo-wrap">
+				<span class="tel">联系电话：121212121</span>
+				<img src="images/logo-jinshang.png" alt="">
+				<div class="we-chat">
+					<img src="images/erwei.jpg" alt="">
+					<span>微信公众号</span>
+				</div>
+			</div>
+
+			<ul class="nav-title">
+				<li>公司简介</li>
+				<li>公司简介</li>
+				<li>公司简介</li>
+				<li>公司简介</li>
+				<li>公司简介</li>
+				<li>公司简介</li>
+			</ul>
+		</section>
 	</header>
 			
 	<!--banner-->
@@ -440,6 +392,22 @@ if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
 		autoplay:true,
 	    autoplaySpeed:3000,
 	})
+
+	//浮动导航
+	var navBox = $(".nav-title");
+	$(window).scroll(function () {
+		var scrollTop = $(window).scrollTop();
+		console.log(scrollTop);
+		if (scrollTop > 60) {
+			if (!navBox.hasClass("nav-fixed")) {
+				/*var height = navBox.height();
+				navBox.parent().height(height);*/
+				navBox.addClass("nav-fixed").hide().slideDown(300);
+			}
+		} else {
+			navBox.removeClass("nav-fixed");
+		}
+	}).trigger('scroll');
 
 </script>
 </body>
