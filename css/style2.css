@@ -137,6 +137,14 @@ img {
   height: 50px;
   position: relative;
 }
+.header .nav-wrapper .logo-wrap .toggle-btn {
+  color: white;
+  font-size: 18px;
+  background-color: transparent;
+  position: absolute;
+  left: 20px;
+  display: none;
+}
 .header .nav-wrapper .logo-wrap img {
   max-width: 160px;
 }
@@ -185,7 +193,7 @@ img {
   background: linear-gradient(180deg, #23201e 0, #23201e);
 }
 .header .nav-wrapper .nav-title li {
-  width: 155px;
+  width: 160px;
   font-size: 20px;
   height: 100%;
   display: flex;
@@ -3001,5 +3009,52 @@ li {
   width: 100%;
   height: 80px;
   background: #d6ccc3;
+}
+@media screen and (max-width: 1120px) {
+  .toggle-pc {
+    display: none !important;
+  }
+  .toggle-btn {
+    display: block !important;
+  }
+  .header .nav-wrapper {
+    height: 50px;
+  }
+}
+.spice-navbar-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.97);
+  display: none;
+}
+.spice-navbar-menu .spice-navbar-remove {
+  position: absolute;
+  right: 20px;
+}
+.spice-navbar-menu ul {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spice-navbar-menu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 51px;
+  line-height: 51px;
+  font-size: 20px;
+  margin-bottom: 26px;
+  width: 100%;
+  cursor: pointer;
+}
+.spice-navbar-menu ul li a {
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /*# sourceMappingURL=style2.css.map */

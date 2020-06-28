@@ -76,7 +76,7 @@ img{
   bottom: 0;
   left: 0;
   max-width: 100%;
- /* max-height: 100%;*/
+  /* max-height: 100%;*/
   display: block;
   vertical-align: middle;
   margin: auto;
@@ -160,6 +160,15 @@ img {
       height: 50px;
       position: relative;
 
+      .toggle-btn {
+        color: white;
+        font-size: 18px;
+        background-color: transparent;
+        position: absolute;
+        left: 20px;
+        display: none;
+      }
+
       img {
         max-width: 160px;
       }
@@ -170,12 +179,12 @@ img {
         color: white;
         font-size: 16px;
 
-        .phone-icon{
+        .phone-icon {
           max-width: 20px;
           margin-right: 5px;
         }
 
-        .anti-counter{
+        .anti-counter {
           margin-left: 5px;
           cursor: pointer;
         }
@@ -190,9 +199,10 @@ img {
         align-items: center;
         top: 10px;
 
-        img{
+        img {
           max-width: 85px;
         }
+
         span {
           margin-top: 5px;
           color: white;
@@ -218,7 +228,7 @@ img {
       }
 
       li {
-        width: 155px;
+        width: 160px;
         font-size: 20px;
         height: 100%;
         display: flex;
@@ -3551,8 +3561,66 @@ li {
   color: #fff;
 }
 
-.driver{
+.driver {
   width: 100%;
   height: 80px;
   background: #d6ccc3;
+}
+
+
+@media screen and (max-width: 1120px) {
+  .toggle-pc {
+    display: none !important;
+  }
+
+  .toggle-btn{
+    display: block !important;
+  }
+
+  .header .nav-wrapper {
+    height: 50px;
+  }
+}
+
+.spice-navbar-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.97);
+  display: none;
+
+  .spice-navbar-remove {
+    position: absolute;
+    right: 20px
+  }
+
+  ul {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 51px;
+      line-height: 51px;
+      font-size: 20px;
+      margin-bottom: 26px;
+      width: 100%;
+      cursor: pointer;
+
+      a {
+        color: black;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+    }
+
+
+  }
 }

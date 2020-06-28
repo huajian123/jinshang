@@ -25,19 +25,36 @@
 <body>
 	
 <div>
+	<div class="spice-navbar-menu">
+		<ul>
+			<li style="position:relative;">菜单<span class="spice-navbar-remove">×</span></li>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="about.html">JINGSHANG故事</a></li>
+			<li><a href="new.html">美丽期刊</a></li>
+			<li><a href="pro_show.html">品牌产品</a></li>
+			<li><a href="jop.html">连锁加盟</a></li>
+			<li><a href="contact.html">联系我们</a></li>
+		</ul>
+	</div>
 	<!--header-->
 	<header class="header">
 		<section class="nav-wrapper ">
 			<div class="logo-wrap">
-				<span class="tel"><img class="phone-icon" src="images/phone.png" alt="">13830794239 <span class="anti-counter">防伪查询</span></span>
+				<span class="toggle-btn">
+					<img src="images/more.svg" alt="">
+					菜单
+				</span>
+
+				<span class="tel toggle-pc"><img class="phone-icon" src="images/phone.png" alt="">13830794239 <span
+						class="anti-counter">防伪查询</span></span>
 				<img src="images/logo-jinshang.png" alt="">
-				<div class="we-chat">
+				<div class="we-chat toggle-pc">
 					<img src="images/erwei.jpg" alt="">
 					<span>微信公众号</span>
 				</div>
 			</div>
 
-			<ul class="nav-title">
+			<ul class="nav-title toggle-pc">
 				<li><a href="index.html">首页</a></li>
 				<li><a href="about.html">JINGSHANG故事</a></li>
 				<li><a href="new.html">美丽期刊</a></li>
@@ -357,6 +374,25 @@ $(window).scroll(function () {
 		navBox.removeClass("nav-fixed");
 	}
 }).trigger('scroll');
+
+// 隐藏按钮导航
+var removeNavBtn = $(".spice-navbar-remove");
+removeNavBtn.click(function () {
+	$(".spice-navbar-menu").css("display","none");
+	$('body').css({
+		"overflow-x":"auto",
+		"overflow-y":"auto"
+	});
+})
+
+// 移动端展示菜单按钮
+$(".toggle-btn").click(function () {
+	$(".spice-navbar-menu").css("display","block");
+	$('body').css({
+		"overflow-x":"hidden",
+		"overflow-y":"hidden"
+	});
+})
 </script>
 
 </body>
