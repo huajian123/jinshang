@@ -139,11 +139,14 @@ img {
 }
 .header .nav-wrapper .logo-wrap .toggle-btn {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   background-color: transparent;
   position: absolute;
   left: 20px;
   display: none;
+}
+.header .nav-wrapper .logo-wrap .toggle-btn img {
+  max-width: 20px;
 }
 .header .nav-wrapper .logo-wrap img {
   max-width: 160px;
