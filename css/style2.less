@@ -167,7 +167,8 @@ img {
         position: absolute;
         left: 20px;
         display: none;
-        img{
+
+        img {
           max-width: 20px;
         }
       }
@@ -715,6 +716,10 @@ li {
   position: relative;
   padding-top: 38px;
   margin-right: 8%;
+
+  p {
+    text-align: left;
+  }
 }
 
 @media (max-width: 640px) {
@@ -724,7 +729,7 @@ li {
   }
 }
 
-.ppjj .container .quan_3 ul li span {
+.ppjj .container .quan_3 ul li span:not(.compony-name) {
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -740,7 +745,7 @@ li {
 }
 
 @media (max-width: 640px) {
-  .ppjj .container .quan_3 ul li span {
+  .ppjj .container .quan_3 ul li span:not(.compony-name) {
     position: inherit;
     top: 0px;
     margin-left: 0px;
@@ -853,7 +858,7 @@ li {
   max-width: 1200px;
   width: 80%;
   margin: auto;
-  background: url(../images/ppcp_bg.png) repeat-y;
+  // background: url(../images/ppcp_bg.png) repeat-y;
   background-size: 100%;
   padding-top: 4.4%;
   padding-bottom: 4.4%;
@@ -912,8 +917,9 @@ li {
 
 .ppcp .container .tu_all ul li .zi_div {
   color: #957f58;
-  text-align: center;
-  padding-top: 15%;
+  text-align: left;
+  padding-top: 22%;
+  padding-right: 19%;
 }
 
 @media (max-width: 480px) {
@@ -1330,7 +1336,8 @@ li {
 
 /*footer*/
 .footer {
-  background: #323232 url(../images/footer_bg.jpg) no-repeat;
+  background:  url(../images/footer_bg.jpg) no-repeat;
+  background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -3576,7 +3583,7 @@ li {
     display: none !important;
   }
 
-  .toggle-btn{
+  .toggle-btn {
     display: block !important;
   }
 
@@ -3623,7 +3630,10 @@ li {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
     }
-
-
   }
+}
+
+.compony-name {
+   font-weight: bold;
+    font-size: 14px;
 }
