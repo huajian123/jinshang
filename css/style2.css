@@ -1279,7 +1279,6 @@ li {
   display: inline-block;
   font-size: 36px;
   line-height: 60px;
-  border-bottom: 2px solid #5d5a57;
 }
 @media (max-width: 480px) {
   .zi_all_top .zi_con span {
@@ -1814,6 +1813,10 @@ li {
   width: 96%;
   position: relative;
 }
+.ppjj_con_zi .con1 .title {
+  font-size: 36px;
+  color: #2b2a2a;
+}
 @media (max-width: 480px) {
   .ppjj_con_zi .con1 {
     padding-top: 130px;
@@ -1852,7 +1855,6 @@ li {
   font-size: 36px;
   line-height: 60px;
   color: #2b2a2a;
-  border-bottom: 2px solid #a5a4a3;
 }
 @media (max-width: 480px) {
   .ppjj_con_zi .con2 .con2_nei .top_tit {
@@ -2030,7 +2032,7 @@ li {
 }
 .ppjj_con_zi .con4 {
   width: 100%;
-  background: #a8a39d;
+  background: #edebea;
   padding-top: 130px;
   padding-bottom: 100px;
 }
@@ -2049,7 +2051,7 @@ li {
   margin: auto;
   width: 96%;
   text-align: center;
-  color: #ffffff;
+  color: #5d5a57;
   font-size: 14px;
   line-height: 26px;
   margin-bottom: 110px;
@@ -2093,8 +2095,9 @@ li {
 .ppjj_con_zi .con4 .con4_time .top_c,
 .ppjj_con_zi .con4 .con4_time .bot_c {
   width: 10%;
-  margin: 0px 0.5%;
+  margin: 0 0.5%;
   float: left;
+  color: #5d5a57;
 }
 .ppjj_con_zi .con4 .con4_time .top_c .span1,
 .ppjj_con_zi .con4 .con4_time .bot_c .span1 {
@@ -2120,6 +2123,7 @@ li {
 .ppjj_con_zi .con4 .con4_time .bot_c {
   position: relative;
   top: 51px;
+  color: #5d5a57;
 }
 @media (max-width: 768px) {
   .ppjj_con_zi .con4 .con4_time {
@@ -3066,6 +3070,6 @@ li {
 }
 .compony-name {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 14px!important;
 }
 /*# sourceMappingURL=style2.css.map */
